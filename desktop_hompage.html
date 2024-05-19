@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desktop_homepage</title>
+    <title> desktop_homepage</title>
     <link rel="stylesheet" href="desktop_homepage.css">
     <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -15,10 +15,7 @@
             <p>$12.00 Standard Post Flat Shipping within Australia (Australia Post & Tracking No.) $15.00 Express Post</p>
         </div>
         <nav class="navbar">
-            <div class="hamburger-menu" id="hamburger-menu">
-                <i class='bx bx-menu'></i>
-            </div>
-            <div><a href="index.html" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>   
+            <div><a href="#" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
             <div class="navbar-links">
                 <ul>
                     <li><a href="shop.html">SHOP</a></li>
@@ -29,7 +26,7 @@
             </div>
             <div class="navbar-icons">
                     <a href="#"><i class='bx bx-search'></i></a>
-                    <div class="heart"><a href="#"><i class='bx bx-heart'></i></a></div>
+                    <a href="#"><i class='bx bx-heart'></i></a>
                     <div class="flag"><img src="res/flag.png" alt="Australia Flag"></div>
                     <a href="#"><i class='bx bx-cart'></i></a>
             </div>
@@ -38,27 +35,23 @@
 
     <!--homepage main-->
     <main>
-        <!--main img-->
         <section class="hero">
-            <div class="slider">
-                <img id="main-image" src="res/Oliv_&_Koko-3165.jpg" alt="Main Image">          
-            </div>
+            <div><img src="res/Oliv_&_Koko-3165.jpg"></div>
             <h1>Handmade Artisan Soap</h1>
         </section>
         <section class="intro">
             <h2>Artisan Soap and Skincare Products</h2>
             <div class="intro-content">
-                <p class="top-left">Oliv & Koko soaps and skincare products are formulated from the highest quality ingredients using 
-                    extra virgin olive oil combined with other plant-based natural oils and butters.</p>
-                <div class="intro-image">
-                    <img src="res/Mask group.png" alt="soap1">
-                </div>
+                <p class="top-left">Oliv & Koko soaps and skincare products are formulated from the highest quality ingredients using extra virgin olive oil combined with other plant-based natural oils and butters.</p>
                 <p class="top-right">The artisan soaps are all handmade using the cold process method to ensure you have a mild soap and providing a rich lather that will leave your skin gently cleansed and moisturised.</p>
                 <p class="bottom-left">We are 100% Australian owned. Handmade in small batches to ensure freshness and quality, with no palm oil, and no animal testing.</p>
                 <button class="bottom-right">Explore</button>
+                <div class="intro-image">
+                    <img src="res/Mask group.png" alt="soap1">
+                </div>
             </div>
         </section>
-        <!--product img-->
+
         <section class="product">
         <ul>
             <li><a href=""><img src="res/product1.png"><span>Soaps</span></a></li>
@@ -69,9 +62,8 @@
             <li><a href=""><img src="res/product6.png"><span>Men's Range</span></a></li>
         </ul>
         </section>
-
-        <button class="Shop" onclick="addToShop()">
-            Shop all
+        <button class="Shop">
+            <a href="">Shop all</a>
         </button>
 
         <section class="product-details">  
@@ -212,7 +204,6 @@
             <div class="right-bottom"><p>website by Ruoxi&Ziwei</p></div>
         </div>
     </footer>
-    <script src="desktop.js"></script>
 </body>
 </html>
 
