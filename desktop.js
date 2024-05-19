@@ -89,3 +89,8 @@ function addToCart() {
 function addToShop(){
     window.location.href = 'shop.html';
 }
+
+// The shop all page jumps to product detail page.
+function addToDetail(){
+    window.location.href = 'desktop_product.html';
+}
