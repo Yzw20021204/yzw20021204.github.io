@@ -195,14 +195,14 @@ h2 {
     padding-left:54px ;
     box-sizing: border-box;
     background-color: #FBFEF7;
-    margin: 50px;
+    margin: 15px;
 }
 
 .product ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 445px;
+    width: 100%;
     height: 482px; 
     box-sizing: border-box;
     flex-direction: row;
@@ -210,10 +210,16 @@ h2 {
 .product ul li{
     margin-bottom: 50px;
     align-items: center;
-    overflow: hidden;
+    
+    width: 100%;
+    box-sizing: border-box;
 }
-
+.product ul li a {
+    text-decoration: none !important; 
+    color: inherit; 
+}
 .product img {
+    width: 100%;
     width: 445px;
     height: 432px;
     display: block;
@@ -231,7 +237,6 @@ h2 {
     line-height: 50px;
     letter-spacing: 3px;
     text-align: center; 
-    text-decoration: none;
     color: #000;
     padding-right: 50px;
 }
@@ -297,8 +302,7 @@ h2 {
 .product-details img {
     width: 80%; 
     margin-bottom: 20px; 
-    border-radius: 8px; 
-    
+    border-radius: 8px;  
 }
 
 .product-details h2{
@@ -782,25 +786,71 @@ button {
         padding-left: 25px;
         padding-bottom: 10px;
     }
+    .bottom-right{
+        width: 60%;
+        height: 60%;
+    }
     
     .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-gap: 20px; 
+        grid-row-gap: 0px;
+        justify-items: center; 
+        padding: 10px;
     }
 
-    .product ul {
-        width: 90%;
+    .product ul { 
         height: auto;
+        padding: 0;
     }
-
+    .product ul li {
+        margin-bottom: 10px;
+    }
     .product img {
+        width: 160px; 
+        height: 153px;
+    }
+    .product span {
+        line-height: 30px;
         width: 100%;
-        height: auto;
+        font-size: 16px;
+        white-space: nowrap; 
+        text-align: center;
+        padding-right: 0px;
     }
 
     .Shop {
-        width: 90%;
-        margin: 20px auto;
+        width: 40%;
+        height: 60%;
+        margin: 10px auto;
+        margin-bottom: 60px;
+    }
+    .product-details ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: hidden; /* Hide the overflow */
+        white-space: nowrap;
+        padding-top: 20px;
+    }
+
+    .product-details ul li {
+        display: inline-block;
+        width: auto;
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .product-details ul li img {
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .product-details ul li span {
+        white-space: nowrap; 
+        
     }
 }

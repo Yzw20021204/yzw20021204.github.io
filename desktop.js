@@ -109,3 +109,29 @@ document.addEventListener("DOMContentLoaded", function() {
     updateImageSource();
     window.addEventListener("resize", updateImageSource);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const ul = document.querySelector('.product-details ul');
+    const liElements = Array.from(ul.children);
+    let scrollAmount = 0;
+    let scrollStep = 1;
+
+    function scrollList() {
+        scrollAmount += scrollStep;
+        if (scrollAmount >= ul.scrollWidth / 2) {
+            scrollAmount = 0;
+        }
+        ul.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Duplicate the list items to create an infinite scrolling effect
+    liElements.forEach(li => {
+        ul.appendChild(li.cloneNode(true));
+    });
+
+    // Set an interval to scroll the list automatically
+    setInterval(scrollList, 30);
+});
