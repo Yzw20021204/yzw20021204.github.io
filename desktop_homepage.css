@@ -1133,4 +1133,12 @@ button {
         text-align: center;
         margin-bottom: 0px;
     }
+    a, button {
+        color: black;       
+        text-decoration: none;  
+    }
+    input, select, button {
+        color: black;  
+        border: 1px solid #000;
+    }
 }
