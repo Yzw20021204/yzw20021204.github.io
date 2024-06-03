@@ -342,4 +342,71 @@ label{
     align-items: center;
 }
 
+@media (max-width: 435px){
+    .container{
+        flex-direction: column;
+    }
 
+    .left-content{
+        width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .right-content{
+        display: none;
+    }
+
+    .selectBox-1, .selectBox-2, .payment .inputBox-gray, .payment .selectBox, .inputBox input[type="text"], .inputBox input[type="radio"], .location, .wrapper input, .wrapper-half-width input, .remember .info, .pay-btn, .input-container input{
+        width: 100%;
+    }
+   
+
+    .payment .inputBox-gray input[type="text"]{
+        width: 100%;
+    }
+    .contact h3{
+        margin-left: 0px;
+    }
+    .inputBox input{
+        font-size: 10px;
+    }
+    .info label{
+        font-size: 10px;
+    }
+    .delivery h3{
+        margin-left: 0px;
+    }
+    .payment h3{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .payment p{
+        font-size: 8px;
+        margin-left: 0px;
+    }
+    .inputBox-gray input[type="text"]{
+        font-size: 13px;
+    }
+    .input-container input[type="text"]{
+        font-size: 13px;
+    }
+    .input-pair input{
+        font-size: 10px;
+    }
+    .input-pair input[type="text"]{
+        font-size: 10px;
+    }
+    .info input[type="text"]{
+        font-size: 10px;
+    }
+    .remember h3{
+        margin-left: 0px;
+    }
+    .info label{
+        font-size: 8px;
+    }
+    .pay-btn{
+        letter-spacing: 3px;
+    }
+}
