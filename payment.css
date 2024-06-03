@@ -2,20 +2,344 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-.left-content{
+body{
+    font-family: Merriweather, Lobster Two, serif, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #ededed;
-    display: flex;
-    justify-content: space-between;
-    padding-left:120px;
-    padding-top: 30px;
-
+    
 }
 
-.inputBox input[type="text"] {
-    width: 100%; 
-    padding: 10px;
+main{
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 50px;
+   
+}
+
+.right-content{
+    flex: 3;
+    padding: 20px;
+    background-color: #d3d3d3;
+}
+
+.left-content, .right-content{
     margin: 10px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+.inputBox input[type="text"], .inputBox input[type="radio"], .location{
+    width: 680px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     box-sizing: border-box; 
+    font-family: Merriweather, sans-serif;
 }
+.input-pair input[type="text"] {
+    
+    width: 335px;
+    display: inline-block;
+   
+}
+
+.input-trio input[type="text"] {
+    width: 220px;
+    display: inline-block;
+}
+
+.input-pair,.input-trio {
+    display: flex;
+    gap: 10px;
+}
+
+.input-pair input[type="text"]:last-child, .input-trio input[type="text"]:last-child {
+    margin-right: 0;
+    padding-right: 0px;
+}
+label{
+    margin-left: 10px;
+}
+
+.info{
+    margin:10px 0;
+}
+
+.delivery{
+    margin-top:40px;
+}
+
+.selectBox-1, .selectBox-2{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 680px;
+    height:48px;
+    font-size: 14px;
+}
+
+.selectBox-1{
+    background-color:#d3d3d3;
+}
+
+.selectBox-2{
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.selectBox-1 .text {
+    padding-left: 7px;
+    font-weight: bold;
+    color: black;
+}
+
+.selectBox-2 .text {
+    padding-left: 7px;
+}
+
+.selectBox-1 .car, .selectBox-2 .store{
+    font-size: 20px;
+    color: black;
+    border: none;
+}
+
+.delabel{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+
+.delabel .icon{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.payment{
+    margin-top: 40px;
+}
+.payment .inputBox-gray {
+    border: 1px solid #d3d3d3;
+    background-color: #d3d3d3;
+    width: 680px;
+    height: 274px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.payment .inputBox-gray input[type="text"] {
+    width: 647px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+.payment .input-pair {
+    display: flex;
+}
+.payment .input-pair input[type="text"] {
+    width: 318px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+.payment input[type="radio"] {
+    margin-right: 10px;
+}
+.payment label {
+    font-family: Merriweather, sans-serif;
+}
+.address-info{
+    font-size: 13px;
+}
+.payment .selectBox{
+    border:  1px solid #d3d3d3;
+    color: #757575;
+    background-color: white;
+    width:680px;
+    height: 48px;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.inputBox-gray {
+    background-color: #d3d3d3;
+    padding: 10px;
+    width:680px;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper input{
+    margin-top: 10px;
+    width: 100%;
+    width: 660px;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+    font-size: 13px;
+}
+
+.wrapper .lock {
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    border: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-half-width input{
+    width: 50%;
+    width: 325px;
+    margin-top: 10px;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+    font-size: 13px;
+}
+
+
+.remember{
+    margin-top: 40px;
+}
+
+.remember .info{
+    margin-top: 10px;
+    color: #757575;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    width:680px;
+    height: 48px;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.pay-btn{
+    background-color:  black;
+    color: white;
+    width: 680px;
+    height: 50px;
+    margin: 40px 0;
+
+}
+
+.pay-btn:hover{
+    background-color:#555;
+}
+
+.total p{
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: light;
+}
+
+.total .total{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.total span{
+    float: right;
+}
+
+.item-1, .item-2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.item-1 p, .item-2 p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-1 .price, .item-2 .price{
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.item-1 img{
+    width: 70px;
+    height: 76px;
+    margin-right: 10px;
+}
+
+.item-2 img{
+    width: 70px;
+    height: 76px;
+    margin-right: 10px;
+}
+
+.apply input[type="text"]{
+    margin-top: 20px;
+    width: 330px;
+    height: 48px;
+    padding: 10px;
+    font-family: Merriweather, sans-serif;
+}
+
+.apply-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: 110px;
+    height: 48px;
+    margin-left: 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
 

@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-
 #banner{
     display: flex;
     flex-direction: column;
@@ -22,6 +21,28 @@
     font-family: Lobster Two, sans-serif;
 }
 
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    background-color: #c3c4af;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    margin: 0 60px;
+}
+
+.arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+
 #product1{
     text-align: center;
     background-color: #c3c4af;
@@ -30,17 +51,14 @@
 #product1 .pro-container{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
     flex-wrap: wrap;
-
 }
 
 #product1 .pro{
     width: 20%;
     max-width: 300px;
     background-color: #817F6A;
-    cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 30px;
     transition: 0.2s ease;
@@ -68,9 +86,7 @@
     font-size: 14px;
     width: 200px;
     height: 40px;
-    font-family: Merriweather, sans-serif;
-    
- 
+    font-family: Merriweather, sans-serif; 
 }
 
 #product1 .pro .des{
@@ -83,15 +99,17 @@
     padding-top: 7px;
     font-family: Lobster Two, sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight:lighter;
 
 }
 
 #product1 .pro .des h4{
-    padding-top: 7px;
+    padding-top: 10px;
     font-size: 16px;
     font-weight: 700;
     color: #ECB7FF;
+    margin-bottom: 10px;
 
 }
 
@@ -106,10 +124,81 @@
 }
 
 #product1 .pro .cart{
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 22px;
     color: white;
     position: absolute;
     bottom: 20px;
     right:10px;
+    border: none;
+}
+
+.section-call{
+    text-align: center;
+    background-color: #c3c4af;
+
+}
+
+.product-count{
+   margin-bottom: 20px;
+}
+
+.load-btn {
+    padding: 10px 40px;
+    font-family: Merriweather, sans-serif;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+
+.load-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 435px) {
+    #product1 .pro{
+        width: 160px;
+        background-color: #817F6A;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+        margin: 10px;
+        transition: 0.2s ease;
+        position: relative;
+    }
+    .sold-out-icon{
+        display: none;
+    }
+    .product-details div{
+        display: none;
+    }
+    #product1 .pro .des h5 {
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 2px;
+       
+    }
+    #product1 .pro .des h4 {
+        font-size: 10px;
+        
+    }
+    .product-count{
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    .load-btn{
+        padding: 10px,15px;
+        font-size: 13px;
+    }
+   
+    .dropdown-button {
+        align-items: center;
+        font-size: 16px; 
+        padding: 10px ; 
+        margin-left: 150px;
+    }
+    .sort{
+        display: none;
+    }
+
 }

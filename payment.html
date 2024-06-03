@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
     <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet" href="desktop_homepage.css">
+    <link rel="stylesheet" href="homepage.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
 
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -29,109 +30,138 @@
             <div class="navbar-icons">
                 <a href="#"><i class='bx bx-cart'></i></a>
             </div>
-        </nav>
-
+        </nav>   
     </header>
 
-    <section class="left-content">
-        <div class="row">
-            <div class="col">
-                <h3 class="title">Contact</h3>
-                <div class="inputBox">
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="info">
-                    <input type="checkbox" id="news-offer">
-                    <label for="news-offer">Email me with news and offers</label>
-                </div>
-            </div>
-
-            <div class="col">
-                <h3 class="title">Delivery</h3>
-                <div class="inputBox">
-                    <input type="radio" id="ship" name="delivery" checked>
-                    <input type="text" placeholder="Ship">
-                    <input type="radio" id="pick-up" name="delivery">
-                    <input type="text" placeholder="Pick Up">
-                    <select>
+    <main>
+        <section class="container">
+            <section class="left-content">
+                <section class="contact">
+                    <h3>Contact</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="info">
+                        <input type="checkbox" id="news-offer">
+                        <label for="news-offer">Email me with news and offers</label>
+                    </div>
+                </section>
+        
+                <section class="delivery">
+                    <h3>Delivery</h3>
+                    <div class="selectBox-1">
+                        <label class="delabel">
+                            <input type="radio" name="delivery" value="ship" checked>
+                            <span class="text">Ship</span>
+                            <span class="icon"><a href="#"><i class="bx bx-car car"></i></a></span>
+                        </label>
+                    </div>
+                    <div class="selectBox-2">
+                        <label class="delabel">
+                            <input type="radio" name="delivery" value="pickup">
+                            <span class="text">Pick Up</span>
+                            <span class="icon"><a href="#"><i class="bx bx-store store"></i></a></span>
+                        </label>
+                    </div>
+                                         
+                    <select class="location">
                         <option value="">Country/Region</option>
-                    </select>   
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="Company (optional)">
-                    <input type="text" placeholder="Address">
-                    <input type="text" placeholder="Apartment, suite, etc. (optional)">
-                    <input type="text" placeholder="City">
-                    <input type="text" placeholder="State/territory">
-                    <input type="text" placeholder="Postcode">
-                    <input type="text" placeholder="Phone (optional)">
+                    </select>
+                    <div class="inputBox">
+                        <div class="input-pair">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <input type="text" placeholder="Company (optional)">
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                        <div class="input-trio">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State/territory">
+                            <input type="text" placeholder="Postcode">
+                        </div>
+                        <input type="text" placeholder="Phone (optional)">
+                    </div>
                     <div class="info">
                         <input type="checkbox" id="text-offer">
                         <label for="text-offer">Text me with news and offers</label>
+                    </div>               
+                </section>
+        
+                <section class="payment">
+                    <h3>Payment</h3>
+                    <p>All transactions are secure and encrypted.</p>
+
+                    <div class="inputBox-gray">
+                        <input type="radio" id="credit-card" name="payment" checked>
+                        <label for="credit-card">Credit Card</label>
+                        <div class="input-container">  
+                            <input type="text" placeholder="Card Number">
+                        </div>                        
+                        <div class="input-pair">
+                            <input type="text" placeholder="Expiration Date (MM/YY)">
+                            <input type="text" placeholder="Security Code">
+                        </div>
+                        <input type="text" placeholder="Name On Card">
+                        <div class="info">
+                            <input type="checkbox" id="same-address">
+                            <span class="address-info">
+                            <label for="same-address">Use shipping address as billing address.</label>  
+                        </span>               
+                        </div>                        
+                    </div>                                                      
+                    <div class="selectBox">
+                        <input type="radio" id="paypal" name="payment">
+                        <label for="paypal">Paypal</label>
+                    </div>   
+                    <div class="selectBox">
+                        <input type="radio" id="afterpay" name="payment">
+                        <label for="afterpay">Afterpay</label>
+                    </div>    
+                    <div class="selectBox">
+                        <input type="radio" id="zip" name="payment">
+                        <label for="zip">Zip - Buy now, play later</label>
+                    </div>     
+                </section>
+        
+                <section class="remember">
+                    <h3>Remember Me</h3>
+                    <div class="info">
+                        <input type="checkbox" id="faster-checkout">
+                        <label for="faster-checkout">Save My Information For A Faster Checkout</label>
                     </div>
-                </div>                
-            </div>
-
-            <div class="col">
-                <h3 class="title">Payment</h3>
-                <p>All transactions are secure and encrypted.</p>
-                <input type="radio" id="credit-card" name="payment" checked>
-                <label for="credit-card">Credit Card</label>
-                <div class="inputBox">
-                    <input type="text" placeholder="Card Number">
-                    <input type="text" placeholder="Expiration Date (MM/YY)">
-                    <input type="text" placeholder="Security Code">
-                    <input type="text" placeholder="Name On Card">
+                </section>
+        
+                <section class="pay">
+                    <button class="pay-btn" onclick="addToConfirm()">PAY NOW</button>
+                </section>
+        
+            </section>
+        
+            <section class="right-content">
+                <div class="item-1">
+                    <img src="res/p9.jpeg" alt="Lime and Coconut Soap">
+                    <p>Lime and Coconut Soap</p>
+                    <p class="price">$9.50</p>
                 </div>
-                <div class="info">
-                    <input type="checkbox" id="same-address">
-                    <label for="same-address">Use shipping address as billing address.</label>
+                <div class="item-2">
+                    <img src="res/p10.jpeg" alt="Orange Blossom, Rose and Ylang">
+                    <p>Orange Blossom, Rose and Ylang</p>
+                    <p class="price">$9.50</p>
                 </div>
-                <div>
-                    <input type="radio" id="paypal" name="payment">
-                    <label for="paypal">Paypal</label>
-                </div>   
-                <div>
-                    <input type="radio" id="afterpay" name="payment">
-                    <label for="afterpay">Afterpay</label>
-                </div>    
-                <div>
-                    <input type="radio" id="zip" name="payment">
-                    <label for="zip">Zip - Buy now, play later</label>
-                </div>     
-            </div>
-
-            <div class="col">
-                <h3 class="title">Remember Me</h3>
-                <div class="info">
-                    <input type="checkbox" id="faster-checkout">
-                    <label for="faster-checkout">Save My Information For A Faster Checkout</label>
+                <div class="total">
+                    <div class="apply">
+                        <input type="text" placeholder="Discount code or gift card">
+                        <button class="apply-btn">Apply</button>
+                    </div>        
+                    <p>Subtotal<span>$19.00</span></p>
+                    <p>Shipping<span>Enter shipping address</span></p>
+                    <p class="total">Total<span>$54.86</span></p>
+                    <p class="tax">including $5.36 in taxes</p>
                 </div>
-            </div>
-        </div>
-        <button class="pay-now">PAY NOW</button>
-    </section>
-
-    <section class="right-content">
-        <div class="item">
-            <img src="res/p9.jpeg" alt="Lime and Coconut Soap">
-            <p>Lime and Coconut Soap</p>
-            <p>$9.50</p>
-        </div>
-        <div class="item">
-            <img src="res/p10.jpeg" alt="Orange Blossom, Rose and Ylang">
-            <p>Orange Blossom, Rose and Ylang</p>
-            <p>$9.50</p>
-        </div>
-        <div class="total">
-            <input type="text" placeholder="Discount code or gift card">
-            <button class="apply-btn">Apply</button>
-            <p class="subtotal">Subtotal<span>$19.00</span></p>
-            <p class="shipping">Shipping<span>Enter shipping address</span></p>
-            <p class="total">Total<span>$54.86</span></p>
-            <p class="tax">including $5.36 in taxes</p>
-        </div>
-    </section>
-
+            </section>
+        </section>   
+    </main>    
+    <script src="desktop.js"></script>
 </body>
 </html>
